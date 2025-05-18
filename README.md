@@ -104,8 +104,6 @@ uvicorn main:app --reload
 
 ---
 
----
-
 ## 🧪 API Usage
 
 ### ▶️ POST `/notify`
@@ -150,15 +148,6 @@ Retries will occur with exponential backoff (1s, 2s, 4s), then be discarded afte
 - `x-retries` RabbitMQ header is used to track retry attempts
 - Queue must match `durable` flag across producer and consumer
 - Only simulates actual delivery (no third-party APIs connected)
-
----
-
-## ✅ To-Do / Improvements
-
-- [ ] Add real integrations for Email/SMS
-- [ ] Add authentication
-- [ ] Deploy to cloud (Render, Railway, etc.)
-- [ ] Store message status in DB
 
 ---
 
